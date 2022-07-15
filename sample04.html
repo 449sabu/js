@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>sample04</title>
+        <!-- 
+            比較演算子
+            ==, === 等しい
+            A < B AはBより小さい
+            A > B AはBより大きい
+            A <= B AはB以下（≦）
+            A >= B AはB以上（≧）
+            A != B, A !== B AとBは等しくない（≠）
+        -->
+    </head>
+    <body>
+        <script>
+            const today = new Date();
+            const q1 = today.getMilliseconds();
+            const q2 = today.getSeconds();
+            let answer = window.prompt(`${q1}+${q2}は？`);
+            const collect = q1 +q2;
+
+            if (answer == collect) {
+                window.alert('正解です！');
+            } else {
+                window.alert('ハズレです！');
+            }
+        </script>
+    </body>
+</html>
